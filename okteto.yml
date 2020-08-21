@@ -1,0 +1,7 @@
+name: HelloWorld
+image: okteto/hello-world:java-maven-dev
+command: ["mvn", "spring-boot:run" ]
+workdir: /code
+forward:
+  - 8082:8082
+  - 8088:8088
